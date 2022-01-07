@@ -10,6 +10,7 @@ header {
   color: var(--white);
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -85,10 +86,16 @@ nav {
   border-bottom: 1px solid var(--primary);
 }
 
+/*  */
 footer {
   text-align: center;
   padding: 0.25rem;
   color: var(--secondary);
   background-color: var(--primary);
   font-size: 20px;
+}
+
+
+.greyscale {
+  filter: grayscale(1);
 }

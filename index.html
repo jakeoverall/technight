@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body>
+<body id='the-body'>
   <header>
     <nav>
       <div class="store-logo">
@@ -94,13 +94,17 @@
   <!-- start Offcanvas -->
   <section>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
+      <div class="offcanvas-header bg-warning">
         <h5 id="offcanvasRightLabel">Your Bag</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body d-flex flex-column justify-content-between">
         <!-- TODO Draw added items into the cart -->
-        <div id="cart"></div>
+        <div id="cart">
+        </div>
+        <div>
+          <button class="btn btn-warning" onclick="checkout()">Checkout</button>
+        </div>
       </div>
     </div>
   </section>
